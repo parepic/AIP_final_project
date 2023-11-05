@@ -4,7 +4,7 @@
 
 ### Installation
 ```
-git clone https://gitlab.ewi.tudelft.nl/cgv/cs4365/student-repositories/2023-2024/cs436523pahmadov.git
+git clone https://github.com/parepic/AIP_final_project.git
 cd Final_project
 ```
 ### Environment
