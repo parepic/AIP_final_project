@@ -55,14 +55,14 @@ The output video is saved in the output directory. To test with your own images,
 ## Explanation
 | Feature | Location in the code
 | :--- | :----------
-| Load 2 RGB images | morph.py: lines 333-336. 2 images are loaded and resized using opencv
-| Run a pretrained landmark detector on images | UI.py: lines 395-399. An appropriate landmark detector is chosen and run based on if --custom flag is set.
-| Interpolate the landmark positions and colors | morph.py: lines 362-369. First, the shepard_interpolate function is called for both images to create the mesh. Later, the applyMesh function applies the mesh on the input image. 
+| Load 2 RGB images | morph.py: lines 297-300. 2 images are loaded and resized using opencv
+| Run a pretrained landmark detector on images | UI.py: lines 394-398. An appropriate landmark detector is chosen and run based on if --custom flag is set.
+| Interpolate the landmark positions and colors | morph.py: lines 326-329. First, the shepard_interpolate function is called for both images to create the mesh. Later, the applyMesh function applies the mesh on the input image. 
 | Project the image to pre-trained GAN | Not implemented. The GPU of the DelftBlue supercomputer was being relied on during development of GAN inversion, and in the final stages of implementation, the jobs couldn’t run on the supercomputer for unknown reasons. Therefore, GAN inversion could not be fully integrated.
-| Repeat the steps | morph.py: line 358. The process is repeated 20 times to create a morphing sequence.  
-| Save the video | morph.py: line 379. The output video is saved in the ./output directory. 
-| Automatically densify the landmarks | morph.py: line 343. Function densify_landmarks is called to densify the landmarks for both images using subdivision.
-| Support for objects other than faces | UI.py: lines 395-399. The pretrained feature extractor for custom objects is executed if the --custom flag is set. This feature extractor works on any type of object but works best if the shapes of the images are very similar.
+| Repeat the steps | morph.py: line 322. The process is repeated 20 times to create a morphing sequence.  
+| Save the video | morph.py: line 338. The output video is saved in the ./output directory. 
+| Automatically densify the landmarks | morph.py: line 307. Function densify_landmarks is called to densify the landmarks for both images using subdivision.
+| Support for objects other than faces | UI.py: lines 394-398. The pretrained feature extractor for custom objects is executed if the --custom flag is set. This feature extractor works on any type of object but works best if the shapes of the images are very similar.
 
 
 
