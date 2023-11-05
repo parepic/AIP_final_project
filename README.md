@@ -5,7 +5,7 @@
 ### Installation
 ```
 git clone https://github.com/parepic/AIP_final_project.git
-cd Final_project
+cd AIP_final_project
 ```
 ### Environment
 The code can be run on Windows OS.
