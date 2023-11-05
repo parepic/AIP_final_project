@@ -1,0 +1,13 @@
+name: face_morphing
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip:
+    - opencv-python
+    - Pillow
+    - scipy
+    - matplotlib
+  - pytorch
+  - dlib
+  - ninja
